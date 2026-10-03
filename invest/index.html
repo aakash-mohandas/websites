@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Referrals — TechAndSats</title>
+<title>Referrals — ParsedThoughts</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
@@ -47,12 +47,10 @@
 <body>
 <div class="hero-mesh"></div>
 <nav>
-  <a class="nav-logo" href="index.html">Tech<span>&</span>Sats</a>
+  <a class="nav-logo" href="index.html">Parsed<span>&</span>Thoughts</a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="index.html#blogs">Blog</a></li>
-      <li><a href="referrals.html" class="active">Referrals</a></li>
-      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html" class="active">Referrals</a></li>
     </ul>
     <button class="theme-toggle" id="toggle" aria-label="Toggle theme">
       <div class="theme-toggle-knob"></div>
@@ -155,23 +153,21 @@
 </section>
 
 <footer>
-  <a class="footer-logo" href="index.html">Tech<span>&</span>Sats</a>
+  <a class="footer-logo" href="index.html">Parsed<span>&</span>Thoughts</a>
   <div class="footer-links">
-    <a href="index.html#blogs">Blog</a>
-    <a href="referrals.html">Referrals</a>
-    <a href="index.html#about">About</a>
+    <a href="index.html">Referrals</a>
   </div>
-  <div class="footer-copy">© 2026 TechAndSats · Not financial advice</div>
+  <div class="footer-copy">© 2026 ParsedThoughts · Not financial advice</div>
 </footer>
 
 <script>
 const html = document.documentElement;
 const btn = document.getElementById('toggle');
-const saved = localStorage.getItem('tas-theme') || 'light';
+const saved = localStorage.getItem('pt-theme') || 'light';
 html.setAttribute('data-theme', saved);
 btn.addEventListener('click', () => {
   const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next); localStorage.setItem('tas-theme', next);
+  html.setAttribute('data-theme', next); localStorage.setItem('pt-theme', next);
 });
 function copyCode(e, code) {
   e.preventDefault(); e.stopPropagation();
