@@ -129,6 +129,13 @@ h2{margin:0;font-size:26px;letter-spacing:-.5px}
 .compare-table tr:last-child td{border-bottom:none}
 .tick{color:#2FA362;font-weight:700}
 .cross{color:#C05050;font-weight:700}
+.byline{display:flex;align-items:center;gap:10px;margin:-6px 0 28px;font-size:13.5px;color:var(--muted)}
+.byline a{color:var(--brand);font-weight:700}
+.byline .av{width:28px;height:28px;border-radius:50%;background:var(--chip);color:var(--brand);display:grid;place-items:center;font-weight:800;font-size:12px;flex:none}
+.faq{margin:36px 0}
+.faq-item{border-bottom:1px solid var(--line);padding:16px 0}
+.faq-item h3{margin:0 0 8px;font-size:16px}
+.faq-item p{margin:0;font-size:14.5px;opacity:.85;line-height:1.7}
 
 /* ===== Referrals page ===== */
 .page-hero{background:var(--bg2);padding:64px 0 48px;text-align:center}
