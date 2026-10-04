@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ParsedThoughts – Crypto, ETFs & investing, parsed</title>
+<style>
+:root{--bg:#fff;--bg2:#f6f6f6;--card:#fff;--text:#111;--muted:#666;--line:#e4e4e4;--accent:#3b5b92;--brand:var(--accent);--brand-t:#fff;--chip:color-mix(in srgb,var(--brand) 10%,var(--bg));
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--bg:#0a0a0a;--bg2:#111;--card:#161616;--text:#f5f5f5;--muted:#999;--line:#2a2a2a;--brand:color-mix(in srgb,var(--accent) 55%,#fff);--brand-t:#0a0a0a;--chip:color-mix(in srgb,var(--brand) 16%,var(--bg))}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;transition:background .2s,color .2s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.5px}.logo span{color:var(--brand)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-t);padding:10px 18px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{background:var(--bg2);padding:64px 0 48px;text-align:center}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.1;letter-spacing:-1.5px;margin:0 auto 14px;max-width:760px}
+.hero p{color:var(--muted);max-width:560px;margin:0 auto 22px;font-size:18px}
+.explore{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--muted)}
+.chip{background:var(--chip);color:var(--brand);padding:7px 14px;border-radius:99px;font-weight:600}
+section{padding:48px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px;gap:12px}
+h2{margin:0;font-size:26px;letter-spacing:-.5px}
+.more{color:var(--brand);font-weight:600;font-size:15px}
+.grid{display:grid;gap:20px}
+.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.thumb{height:130px;display:flex;align-items:center;justify-content:center;font-size:44px;background:linear-gradient(135deg,color-mix(in srgb,var(--brand) 8%,var(--bg)),color-mix(in srgb,var(--brand) 22%,var(--bg)))}
+.t2{background:linear-gradient(135deg,color-mix(in srgb,var(--brand) 14%,var(--bg)),color-mix(in srgb,var(--brand) 32%,var(--bg)))}.t3{background:linear-gradient(135deg,color-mix(in srgb,var(--brand) 4%,var(--bg)),color-mix(in srgb,var(--brand) 14%,var(--bg)))}.t4{background:linear-gradient(135deg,color-mix(in srgb,var(--brand) 18%,var(--bg)),color-mix(in srgb,var(--brand) 40%,var(--bg)))}
+
+.body{padding:16px 18px 20px}
+.tag{font-size:12px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.5px}
+.card h3{margin:6px 0;font-size:18px;line-height:1.3}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.meta{font-size:12px;color:var(--muted);margin-top:10px}
+.cat{padding:22px;text-align:left}
+.cat .ico{font-size:28px;margin-bottom:8px}
+.cat h3{margin:0 0 4px}
+.alt{background:var(--bg2)}
+.cta{background:var(--brand);color:var(--brand-t);border-radius:20px;padding:40px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta h2{max-width:480px}
+.cta form{display:flex;gap:8px;flex-wrap:wrap}
+.cta input{padding:12px 14px;border-radius:10px;border:0;min-width:220px;font-size:15px}
+.cta .btn{background:var(--brand-t);color:var(--brand)}
+.two{display:grid;grid-template-columns:2fr 1fr;gap:32px}
+.row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row .thumb{width:110px;height:84px;border-radius:12px;font-size:28px;flex:none}
+.side .box{border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:20px;background:var(--card)}
+.side h4{margin:0 0 12px;font-size:16px}
+.side input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text)}
+.side li{list-style:none;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.side ul{margin:0;padding:0}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:14px}
+footer .disc{margin-top:12px;font-size:13px}
+#theme{position:fixed;right:calc(12px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:20px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+@media(max-width:860px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr}.two{grid-template-columns:1fr}nav ul{display:none}.cta{padding:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#">Parsed<span>Thoughts</span></a>
+<nav><ul><li><a href="#">Home</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#guides">Guides</a></li><li><a href="#">Contact</a></li></ul></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Crypto, ETFs and investing, parsed.</h1>
+<p>Honest platform reviews and plain-English guides to help you pick the right tools.</p>
+<div class="explore">Explore by: <a class="chip" href="#reviews">Reviews</a><a class="chip" href="#guides">Guides</a></div>
+</div></div>
+
+<section><div class="wrap">
+<div class="sh"><h2>Featured</h2></div>
+<div class="grid g4">
+<a class="card" href="#"><div class="thumb">🪙</div><div class="body"><div class="tag">Crypto</div><h3>Sample: Best crypto exchanges for beginners</h3><p>Fees, security and ease of use compared.</p></div></a>
+<a class="card" href="#"><div class="thumb t2">📊</div><div class="body"><div class="tag">ETFs</div><h3>Sample: How to start investing in ETFs</h3><p>A simple first-steps walkthrough.</p></div></a>
+<a class="card" href="#"><div class="thumb t3">🏦</div><div class="body"><div class="tag">Platforms</div><h3>Sample: Broker fees explained</h3><p>What you really pay, line by line.</p></div></a>
+<a class="card" href="#"><div class="thumb t4">🎮</div><div class="body"><div class="tag">Gaming</div><h3>Sample: Play-to-earn, reality check</h3><p>What works and what doesn't.</p></div></a>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+<div class="sh"><h2>Categories</h2></div>
+<div class="grid g4">
+<a class="card cat" href="#"><div class="ico">🪙</div><h3>Crypto</h3><p>Exchanges, wallets, staking and mining.</p></a>
+<a class="card cat" href="#"><div class="ico">📈</div><h3>ETFs &amp; Stocks</h3><p>Funds, brokers and long-term investing.</p></a>
+<a class="card cat" href="#"><div class="ico">🎮</div><h3>Gaming</h3><p>Earning in games, tokens and rewards.</p></a>
+<a class="card cat" href="#"><div class="ico">🛠️</div><h3>Tools</h3><p>Trackers, calculators and apps we use.</p></a>
+</div></div></section>
+
+<section id="reviews"><div class="wrap">
+<div class="sh"><h2>Platform reviews</h2></div>
+<div class="grid g3">
+<a class="card" href="review-kraken.html"><div class="thumb">🔷</div><div class="body"><div class="tag">Crypto Exchange</div><h3>Kraken Pro review</h3><p>Fees, features and why it's one of the most trusted exchanges.</p><div class="meta">Oct 2026</div></div></a>
+<a class="card" href="review-binance.html"><div class="thumb t2">🟡</div><div class="body"><div class="tag">Crypto Exchange</div><h3>Binance review</h3><p>The world's largest exchange by volume — pros, cons and who it suits.</p><div class="meta">Oct 2026</div></div></a>
+<a class="card" href="review-revolut.html"><div class="thumb t3">💳</div><div class="body"><div class="tag">Digital Banking</div><h3>Revolut review</h3><p>Multi-currency accounts, fee-free spending and crypto in one app.</p><div class="meta">Oct 2026</div></div></a>
+<a class="card" href="review-trade-republic.html"><div class="thumb t4">📈</div><div class="body"><div class="tag">Investing · Banking</div><h3>Trade Republic review</h3><p>Commission-free stocks, ETFs and a high-yield savings account.</p><div class="meta">Oct 2026</div></div></a>
+<a class="card" href="review-gomining.html"><div class="thumb">⛏️</div><div class="body"><div class="tag">Bitcoin Mining</div><h3>GoMining review</h3><p>Passive Bitcoin mining via NFT miners — returns, fees and risks.</p><div class="meta">Oct 2026</div></div></a>
+<a class="card" href="review-zbd.html"><div class="thumb t2">⚡</div><div class="body"><div class="tag">Bitcoin Rewards</div><h3>ZBD review</h3><p>Earning real sats playing mobile games over the Lightning Network.</p><div class="meta">Oct 2026</div></div></a>
+<a class="card" href="review-rollercoin.html"><div class="thumb t3">🎮</div><div class="body"><div class="tag">Bitcoin Mining Game</div><h3>RollerCoin review</h3><p>Mine Bitcoin by playing mini-games — free to start, fun to tinker with.</p><div class="meta">Oct 2026</div></div></a>
+</div></div></section>
+
+<section id="guides"><div class="wrap">
+<div class="sh"><h2>Guides</h2><a class="more" href="#">Browse all guides →</a></div>
+<div class="grid g3">
+<a class="card" href="#"><div class="thumb">🧭</div><div class="body"><div class="tag">Getting started</div><h3>Sample: Getting started with crypto</h3><p>Step by step, no jargon.</p></div></a>
+<a class="card" href="#"><div class="thumb t2">🧭</div><div class="body"><div class="tag">Getting started</div><h3>Sample: Your first ETF purchase</h3><p>From account to order.</p></div></a>
+<a class="card" href="#"><div class="thumb t3">🧭</div><div class="body"><div class="tag">Getting started</div><h3>Sample: Keeping your coins safe</h3><p>Wallet and security basics.</p></div></a>
+</div></div></section>
+
+<footer><div class="wrap">
+<div><strong class="logo">Parsed<span>Thoughts</span></strong> &nbsp;© 2026</div>
+</div></footer>
+
+<button id="theme" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+<script>
+(function(){
+var r=document.documentElement,b=document.getElementById('theme'),t='light';
+try{t=localStorage.getItem('pt-theme')||'light'}catch(e){}
+function set(v){t=v;r.setAttribute('data-theme',v);b.textContent=v==='dark'?'☀️':'🌙';try{localStorage.setItem('pt-theme',v)}catch(e){}}
+set(t);
+b.addEventListener('click',function(){set(t==='dark'?'light':'dark')});
+})();
+</script>
+</body>
+</html>

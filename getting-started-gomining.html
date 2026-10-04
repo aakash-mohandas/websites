@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Getting Started with GoMining — ParsedThoughts</title>
+<style>
+:root{--bg:#fff;--bg2:#f6f6f6;--card:#fff;--text:#111;--muted:#666;--line:#e4e4e4;--accent:#3b5b92;--brand:var(--accent);--brand-t:#fff;--chip:color-mix(in srgb,var(--brand) 10%,var(--bg));
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--bg:#0a0a0a;--bg2:#111;--card:#161616;--text:#f5f5f5;--muted:#999;--line:#2a2a2a;--brand:color-mix(in srgb,var(--accent) 55%,#fff);--brand-t:#0a0a0a;--chip:color-mix(in srgb,var(--brand) 16%,var(--bg))}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;transition:background .2s,color .2s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.5px}.logo span{color:var(--brand)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-t);padding:10px 18px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer}
+.article-wrap{max-width:720px;margin:0 auto;padding:48px 20px 64px}
+.back-link{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);display:inline-flex;align-items:center;gap:6px;margin-bottom:24px}
+.back-link:hover{gap:10px}
+.meta{display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:999px;background:var(--chip);color:var(--brand)}
+.date,.read{font-size:13px;color:var(--muted);font-weight:600}
+.article h1{font-size:clamp(28px,4.4vw,40px);line-height:1.2;letter-spacing:-1px;margin:0 0 16px}
+.lead{font-size:18px;color:var(--muted);line-height:1.7;border-left:3px solid var(--brand);padding-left:18px;margin-bottom:40px}
+.article h2{font-size:22px;letter-spacing:-.3px;margin:36px 0 14px}
+.article h3{font-size:17px;margin:28px 0 10px}
+.article p{font-size:15px;color:var(--text);opacity:.85;line-height:1.8;margin-bottom:18px}
+.article ul{padding-left:22px;margin-bottom:18px}
+.article li{font-size:15px;opacity:.8;line-height:1.75;margin-bottom:6px}
+.article strong{font-weight:700;opacity:1}
+.callout{background:var(--chip);border-left:3px solid var(--brand);border-radius:10px;padding:14px 18px;margin:22px 0;font-size:14px;line-height:1.65}
+.cta-box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;margin:36px 0;text-align:center}
+.cta-box h3{font-size:17px;margin:0 0 8px}
+.cta-box p{font-size:14px;color:var(--muted);margin-bottom:18px}
+.cta-btn{display:inline-block;background:var(--brand);color:var(--brand-t);text-decoration:none;font-weight:700;font-size:14px;padding:12px 24px;border-radius:99px}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:14px}
+footer .disc{margin-top:12px;font-size:13px}
+#theme{position:fixed;right:calc(12px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:20px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+@media(max-width:860px){nav ul{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="index.html">Parsed<span>Thoughts</span></a>
+<nav><ul><li><a href="index.html">Home</a></li><li><a href="index.html#reviews">Reviews</a></li><li><a href="index.html#guides">Guides</a></li><li><a href="#">Contact</a></li></ul></nav>
+<a class="btn" href="index.html#subscribe">Subscribe</a>
+</div></header>
+
+<div class="article-wrap">
+<a class="back-link" href="referrals.html">← Back to Referrals</a>
+<article>
+  <div class="meta">
+    <span class="tag">Crypto</span>
+    <span class="date">May 2026</span>
+    <span class="read">5 min read</span>
+  </div>
+  <h1>Getting Started with GoMining: Passive Bitcoin Income Without the Hardware</h1>
+  <p class="lead">How I built a 1,010 TH/s mining fleet without owning a single ASIC — and what I learned about passive BTC income along the way.</p>
+
+  <h2>What is GoMining?</h2>
+  <p>GoMining is a platform that lets you participate in Bitcoin mining without purchasing, hosting, or maintaining physical ASIC hardware. Instead, you buy NFTs that represent real mining machines operating in professional data centres. The platform handles power, cooling, maintenance, and pool management — you just collect BTC daily.</p>
+  <p>I discovered it about two years ago while looking for ways to get BTC exposure beyond simply buying and holding. The idea of receiving daily BTC regardless of price action appealed to me as someone with a DevOps mindset — I liked the idea of infrastructure working for me while I sleep.</p>
+
+  <h2>How Does It Actually Work?</h2>
+  <p>Each miner NFT has two key specs: <strong>hashrate (TH/s)</strong> and <strong>energy efficiency (J/TH)</strong>. Hashrate determines your share of the daily Bitcoin block rewards. Efficiency determines how much of that reward is consumed by the maintenance fee — the platform's way of accounting for electricity costs.</p>
+  <p>The daily reward formula is roughly:</p>
+  <div class="callout">Daily BTC ≈ (Your TH/s ÷ Network TH/s) × Block Rewards × (1 − Maintenance Fee %)</div>
+  <p>The better your efficiency, the lower your maintenance fee, and the more BTC you keep. This is why efficiency matters more than raw hashrate as you scale up.</p>
+
+  <h2>My Fleet Today</h2>
+  <p>I currently run <strong>6 miners totalling 1,010 TH/s</strong> with an average efficiency of 15.46 J/TH. I've reached VIP 8 Platinum I status, which gives me an 11.1% maintenance discount on top of the base rate — this compounds meaningfully at my scale.</p>
+  <ul>
+    <li>Daily payouts land automatically in my GoMining wallet</li>
+    <li>I track BTC earned vs. maintenance cost weekly</li>
+    <li>I participate in Miner Wars for bonus BTC on top of passive income</li>
+    <li>I reinvest a portion of earnings into hashrate upgrades</li>
+  </ul>
+
+  <h2>Getting Started: Step by Step</h2>
+  <h3>1. Create an account</h3>
+  <p>Sign up via my referral link below. You'll get a welcome bonus and I get a referral reward — a win for both of us.</p>
+  <h3>2. Browse the miner marketplace</h3>
+  <p>Start with a mid-range miner. Don't obsess over the cheapest option — efficiency matters. A miner at 18 J/TH will eat into your rewards significantly more than one at 14 J/TH.</p>
+  <h3>3. Monitor your daily BTC</h3>
+  <p>The dashboard shows real-time hashrate, daily earnings, and maintenance cost. Give it a week to get a feel for your actual net BTC flow.</p>
+  <h3>4. Compound or withdraw</h3>
+  <p>GoMining lets you upgrade miners directly with your accumulated BTC. Compounding early accelerates your fleet growth. Once you're happy with your TH/s, withdrawals to an external wallet are straightforward.</p>
+
+  <div class="callout">💡 Pro tip: Watch for VIP level thresholds. Each tier reduces your maintenance discount, which at scale is worth more than the cost of the next miner upgrade.</div>
+
+  <h2>Is It Worth It?</h2>
+  <p>That depends entirely on your BTC price assumptions and time horizon. During bull markets, the BTC you earn compounds in fiat value. During bear markets, you're still accumulating sats at a steady rate. For me, it functions like a BTC dollar-cost averaging engine that also gives me daily liquidity — something pure HODLing doesn't offer.</p>
+  <p>My honest take: it's not a get-rich-quick scheme. It's a long-term BTC accumulation strategy that suits a certain type of investor. If you're already bullish on Bitcoin and want exposure beyond a buy-and-hold position, GoMining is worth exploring.</p>
+
+  <div class="cta-box">
+    <h3>Ready to start mining?</h3>
+    <p>Use my referral link to sign up and claim your welcome bonus. Referral code: <strong>MBPYPW9</strong></p>
+    <a class="cta-btn" href="https://gomining.com/?ref=MBPYPW9" target="_blank" rel="noopener">Start Mining on GoMining →</a>
+  </div>
+</article>
+</div>
+
+<footer><div class="wrap">
+<div><strong class="logo">Parsed<span>Thoughts</span></strong> &nbsp;© 2026</div>
+</div></footer>
+
+<button id="theme" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+<script>
+(function(){
+var r=document.documentElement,b=document.getElementById('theme'),t='light';
+try{t=localStorage.getItem('pt-theme')||'light'}catch(e){}
+function set(v){t=v;r.setAttribute('data-theme',v);b.textContent=v==='dark'?'☀️':'🌙';try{localStorage.setItem('pt-theme',v)}catch(e){}}
+set(t);
+b.addEventListener('click',function(){set(t==='dark'?'light':'dark')});
+})();
+</script>
+</body>
+</html>
