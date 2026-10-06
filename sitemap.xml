@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://parsedthoughts.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-<url><loc>https://parsedthoughts.com/review-kraken.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://parsedthoughts.com/review-binance.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://parsedthoughts.com/review-revolut.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://parsedthoughts.com/review-trade-republic.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://parsedthoughts.com/review-gomining.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://parsedthoughts.com/review-zbd.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://parsedthoughts.com/review-rollercoin.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://parsedthoughts.com/getting-started-gomining.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://parsedthoughts.com/why-i-mine-bitcoin-passively.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-kraken.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-binance.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-revolut.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-trade-republic.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-gomining.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-zbd.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://parsedthoughts.com/reviews/review-rollercoin.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-kraken.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-binance.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-revolut.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-trade-republic.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-gomining.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-zbd.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/getting-started-rollercoin.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://parsedthoughts.com/guides/why-i-mine-bitcoin-passively.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://parsedthoughts.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 <url><loc>https://parsedthoughts.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
 </urlset>
